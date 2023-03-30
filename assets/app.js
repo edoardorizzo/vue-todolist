@@ -34,16 +34,15 @@ createApp({
   },
   methods: {
     addTaskToList(){
-        this.tasks.unshift(this.inputText)
-    },
-    taskDone(){
-        this.tasks.done = true;
-        console.log(this.taskDone);
-    },
-    lineThrough(){
-        if (this.tasks.done == true) {
-            this.tasks.text
+        const taskToAdd = {
+            text: this.inputText,
+            done: false,
         }
-    }
+        this.tasks.unshift(taskToAdd)
+    },
+    taskDone(index, event){
+        this.tasks[index].done = true;
+        event.target.classList.toggle('line-through');
+    },
   }
 }).mount('#app')

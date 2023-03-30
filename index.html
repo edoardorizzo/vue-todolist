@@ -21,13 +21,13 @@
                 </div>
                 <div class="todo_body ps-3 pe-3">
                     <div class="todo_imput d-flex justify-content-between">
-                        <input v-model="inputText" class="rounded-4 p-2 w-75" type="text">
-                        <button @click="addTaskToList" class="task_btn rounded-4 p-2 border-0">Add Task</button>
+                        <input v-model="inputText" class="rounded-4 p-2 w-75 mr-1" type="text">
+                        <button @click="addTaskToList" class="task_btn w-25 rounded-4 p-2 border-0 ml-1">Add Task</button>
                     </div>
                     <div class="border border-bottom mt-4"></div>
                     <div class="todo_list">
                         <ul class="list-unstyled">
-                            <li class="fw-semibold border-bottom pt-4 pb-4" v-for="task in tasks"><i class="fa-solid fa-circle-check fa-xl" @click="taskDone"></i> {{ task.text }}</li>
+                            <li class="fw-semibold border-bottom pt-4 pb-4" v-for="(task, index) in tasks" @click="taskDone(index, $event)"><i class="fa-solid fa-circle-check fa-xl" :key="index"></i> {{ task.text }}</li>
                         </ul>
                     </div>
                 </div>
