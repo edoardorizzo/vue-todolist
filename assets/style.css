@@ -16,3 +16,8 @@ h3{
     background-color: rgb(59, 59, 128);
     color: white;
 }
+
+.fa-circle-check{
+    margin-right: 8px;
+    color: rgb(59, 59, 128);
+}

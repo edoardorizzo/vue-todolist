@@ -3,32 +3,32 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
-      tasks: [
+        inputText: '',
+        tasks: [
         {
-            text: 'Design header sito beauty',
-            done: true
+            text: 'Design header sito beauty'
         },
         {
-            text: 'Call revisione sito Mountain Bike',
-            done: false
+            text: 'Call revisione sito Mountain Bike'
         },
         {
-            text: 'Call allineamneto team di sviluppo',
-            done: false
+            text: 'Call allineamneto team di sviluppo'
         },
         {
-            text: 'Design component card',
-            done: false
+            text: 'Design component card'
         },
         {
-            text: 'Design carousel',
-            done: false
+            text: 'Design carousel'
         },
         {
-            text: 'Design comp 4/8 col',
-            done: false
+            text: 'Design comp 4/8 col'
         },
       ]
+    }
+  },
+  methods: {
+    addTaskToList(){
+        this.tasks.unshift(this.inputText);
     }
   }
 }).mount('#app')
