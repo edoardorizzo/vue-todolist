@@ -27,7 +27,7 @@
                     <div class="border border-bottom mt-4"></div>
                     <div class="todo_list">
                         <ul class="list-unstyled">
-                            <li class="fw-semibold border-bottom pt-4 pb-4" v-for="task in tasks"><i class="fa-solid fa-circle-check fa-xl"></i> {{ task.text }}</li>
+                            <li class="fw-semibold border-bottom pt-4 pb-4" v-for="task in tasks"><i class="fa-solid fa-circle-check fa-xl" @click="taskDone"></i> {{ task.text }}</li>
                         </ul>
                     </div>
                 </div>
