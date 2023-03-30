@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(72, 72, 181);
+    font-family: Montserrat;
+}
+
+.todo_card{
+    background-color: rgb(249, 249, 249);
+    border: 0.5px solid lightgrey;
+}
+
+h3{
+    color: rgb(59, 59, 128);
+}
+
+.task_btn{
+    background-color: rgb(59, 59, 128);
+    color: white;
+}
