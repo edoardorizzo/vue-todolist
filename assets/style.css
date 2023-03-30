@@ -22,6 +22,10 @@ h3{
     color: rgb(59, 59, 128);
 }
 
+.fa-trash{
+    color: rgb(59, 59, 128);
+}
+
 .line-through{
     text-decoration: line-through;
 }

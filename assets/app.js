@@ -44,5 +44,8 @@ createApp({
         this.tasks[index].done = true;
         event.target.classList.toggle('line-through');
     },
+    deleteTask(){
+        this.tasks.shift()
+    },
   }
 }).mount('#app')
